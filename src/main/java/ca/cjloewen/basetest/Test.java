@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 @Mod(Test.MODID)
 public class Test extends BaseMod {
 	public static final String MODID = "test";
-	public ConfigHolder<ClientConfig, ServerConfig> CONFIG;
+	public static ConfigHolder<ClientConfig, ServerConfig> CONFIG;
 	public static TestItemGroup ITEM_GROUP;
 	public static Items ITEMS;
 	public static Blocks BLOCKS;
