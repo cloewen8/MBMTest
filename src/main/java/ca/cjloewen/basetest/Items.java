@@ -11,6 +11,7 @@ public class Items extends BaseRegistry<Item> {
 	
 	public Items() {
 		super(ForgeRegistries.ITEMS, Test.MODID);
+		
 		register("test_item", TestItem.class);
 	}
 	
@@ -18,7 +19,7 @@ public class Items extends BaseRegistry<Item> {
 		protected static final String name = "test_item";
 		
 		public TestItem() {
-			super(new Item.Properties());
+			super(new Item.Properties().group(Test.ITEM_GROUP));
 		}
 	}
 }
