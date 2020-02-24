@@ -6,8 +6,9 @@ import net.minecraft.block.material.Material;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.ObjectHolder;
 
+@ObjectHolder(Test.MODID)
 public class Blocks extends BaseRegistry<Block> {
-	@ObjectHolder(Test.MODID + ":" + TestBlock.name)
+	@ObjectHolder(TestBlock.name)
 	public static TestBlock TEST_BLOCK;
 	
 	public Blocks() {
@@ -15,7 +16,7 @@ public class Blocks extends BaseRegistry<Block> {
 		register(TestBlock.name, TestBlock.class);
 	}
 	
-	public class TestBlock extends Block {
+	public static class TestBlock extends Block {
 		protected static final String name = "test_block";
 		
 		public TestBlock() {

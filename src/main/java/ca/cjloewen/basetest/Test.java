@@ -19,8 +19,8 @@ public class Test extends BaseMod {
 		LOGGER.debug("Creating item group.");
 		ITEM_GROUP = new TestItemGroup();
 		LOGGER.debug("Registering items.");
-		ITEMS = new Items();
+		ITEMS = (Items) new Items().register();
 		LOGGER.debug("Registering blocks.");
-		BLOCKS = new Blocks();
+		BLOCKS = (Blocks) new Blocks().register();
 	}
 }
