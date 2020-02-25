@@ -15,6 +15,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.ObjectHolder;
 
+/**
+ * Registers a test item and test block item.
+ */
 @ObjectHolder(Test.MODID)
 public class Items extends BaseRegistry<Item> {
 	@ObjectHolder(TestItem.name)

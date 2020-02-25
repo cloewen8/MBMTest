@@ -6,6 +6,9 @@ import net.minecraft.block.material.Material;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.ObjectHolder;
 
+/**
+ * Registers a test block.
+ */
 @ObjectHolder(Test.MODID)
 public class Blocks extends BaseRegistry<Block> {
 	@ObjectHolder(TestBlock.name)

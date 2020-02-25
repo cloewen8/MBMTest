@@ -5,6 +5,9 @@ import net.minecraftforge.common.ForgeConfigSpec.Builder;
 import net.minecraftforge.fml.config.ModConfig;
 
 public class ClientConfig extends CommonConfig {
+	/**
+	 * A configuration displayed from the test item tooltip.
+	 */
 	public BooleanValue testBool;
 	
 	public void build(Builder builder) {

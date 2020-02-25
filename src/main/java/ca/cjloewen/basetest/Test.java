@@ -4,6 +4,9 @@ import ca.cjloewen.base.BaseMod;
 import ca.cjloewen.base.ConfigHolder;
 import net.minecraftforge.fml.common.Mod;
 
+/**
+ * Starts the test mod.
+ */
 @Mod(Test.MODID)
 public class Test extends BaseMod {
 	public static final String MODID = "test";
@@ -15,7 +18,7 @@ public class Test extends BaseMod {
 	public Test() {
 		LOGGER.debug("Starting MBM Test mod!");
 		LOGGER.debug("Registering ConfigHolder.");
-		CONFIG = new ConfigHolder<ClientConfig, ServerConfig>(new ClientConfig(), new ServerConfig()).register(this);
+		CONFIG = new ConfigHolder<ClientConfig, ServerConfig>(new ClientConfig(), new ServerConfig()).register();
 		LOGGER.debug("Creating item group.");
 		ITEM_GROUP = new TestItemGroup();
 		LOGGER.debug("Registering items.");
